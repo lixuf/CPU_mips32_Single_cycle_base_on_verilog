@@ -1,0 +1,15 @@
+module ifr(ifrin,ifrout,reset,ifrenable);
+	input [31:0] ifrin;
+	input reset,ifrenable;
+	output [31:0] ifrout;
+	reg [31:0] ifrout;
+	wire [31:0] data;
+	reg[31:0] memory[10'b1111111111:0];
+	always@(ifrin or posedge reset)
+	begin
+	 if(reset)
+	  ifrout<=8'hxxxxxxxx;
+	 else if(ifrenable)
+	  ifrout<=memory[ifrin[11:2]]; 
+	end
+endmodule
