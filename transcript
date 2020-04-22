@@ -1,0 +1,176 @@
+# Reading C:/intelFPGA_pro/19.4/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile {C:/Users/TR/Desktop/computer construct/mips32si/cputop.v}
+vlog -reportprogress 300 -work work {C:/Users/TR/Desktop/computer construct/mips32si/cputop.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2019.2 Compiler 2019.04 Apr 17 2019
+# Start time: 09:50:38 on Apr 22,2020
+# vlog -reportprogress 300 -work work C:/Users/TR/Desktop/computer construct/mips32si/cputop.v 
+# -- Compiling module alu
+# ** Warning: ** while parsing file included at C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(1)
+# ** while parsing file included at cpu.v(1)
+# ** at alu.v(23): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module alucontrol
+# -- Compiling module control_unit
+# -- Compiling module id
+# ** Warning: ** while parsing file included at C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(1)
+# ** while parsing file included at cpu.v(4)
+# ** at id.v(12): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: ** while parsing file included at C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(1)
+# ** while parsing file included at cpu.v(4)
+# ** at id.v(13): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module ifr
+# ** Warning: ** while parsing file included at C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(1)
+# ** while parsing file included at cpu.v(5)
+# ** at ifr.v(11): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module mem
+# -- Compiling module pc
+# ** Warning: ** while parsing file included at C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(1)
+# ** while parsing file included at cpu.v(7)
+# ** at pc.v(9): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module pc_add
+# -- Compiling module pc_mux1
+# ** Warning: ** while parsing file included at C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(1)
+# ** while parsing file included at cpu.v(9)
+# ** at pc_mux1.v(6): (vlog-2283) Extra semicolon in $unit (global) scope.
+# -- Compiling module pc_mux2
+# -- Compiling module pc_nadd
+# -- Compiling module pc_shift
+# -- Compiling module sign_extend
+# ** Warning: ** while parsing file included at C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(1)
+# ** while parsing file included at cpu.v(13)
+# ** at sign_extend.v(9): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: ** while parsing file included at C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(1)
+# ** while parsing file included at cpu.v(13)
+# ** at sign_extend.v(14): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module cpu
+# -- Compiling module cputop
+# ** Warning: C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(32): (vlog-2283) Extra semicolon in $unit (global) scope.
+# 
+# Top level modules:
+# 	cputop
+# End time: 09:50:38 on Apr 22,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 9
+vsim -gui work.cputop
+# vsim -gui work.cputop 
+# Start time: 09:50:49 on Apr 22,2020
+# Loading work.cputop
+# Loading work.cpu
+# Loading work.pc
+# Loading work.pc_add
+# Loading work.ifr
+# Loading work.control_unit
+# Loading work.sign_extend
+# Loading work.pc_nadd
+# Loading work.pc_mux1
+# Loading work.pc_shift
+# Loading work.pc_mux2
+# Loading work.id
+# Loading work.alucontrol
+# Loading work.alu
+# Loading work.mem
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 't_cpu'.  Expected 31, found 4.
+#    Time: 0 ns  Iteration: 0  Instance: /cputop/t_cpu File: C:/Users/TR/Desktop/computer construct/mips32si/cputop.v Line: 7
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'pcin'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'pcout'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'pc_addout'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'zero'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'ifrout'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'jump'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'branch'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'memtoreg'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'memwrite'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'memread'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'aluop'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'alusrc'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'regwrite'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'regdst'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'signout'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'signout2'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'pc_naddout'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'pc_mux1out'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'jout'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'regdstout'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'rd1'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'rd2'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'alusrcout'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'aluopration'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'result'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'rd'.
+# ** Warning: (vsim-3722) C:/Users/TR/Desktop/computer construct/mips32si/cputop.v(7): [TFMPC] - Missing connection for port 'memtoregout'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'm_ifr'.  Expected 4, found 3.
+#    Time: 0 ns  Iteration: 0  Instance: /cputop/t_cpu/m_ifr File: cpu.v Line: 26
+# ** Warning: (vsim-3722) cpu.v(26): [TFMPC] - Missing connection for port 'reset'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (28) does not match connection size (26) for port 'jin'. The port definition is at: pc_shift.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /cputop/t_cpu/m_pc_shift File: cpu.v Line: 31
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'in0'. The port definition is at: pc_mux2.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /cputop/t_cpu/m_regdst File: cpu.v Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (5) for port 'in1'. The port definition is at: pc_mux2.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /cputop/t_cpu/m_regdst File: cpu.v Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'wr'. The port definition is at: id.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /cputop/t_cpu/m_id File: cpu.v Line: 34
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (5) for port 'func'. The port definition is at: alucontrol.v(1).
+#    Time: 0 ns  Iteration: 0  Instance: /cputop/t_cpu/m_alucontrol File: cpu.v Line: 36
+add list -r sim:/cputop/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 09:55:17 on Apr 22,2020, Elapsed time: 0:04:28
+# Errors: 0, Warnings: 35
